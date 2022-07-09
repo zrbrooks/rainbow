@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours</title>
+<style>
+  h1,
+      h2,
+      h3 {
+        font-family: "Monaco";
+        text-align: center;
+      }
+
+      h1 {
+        color: #0483ee;
+        font-size: 56px;
+        line-height: 50px;
+      }
+      .colorleftred {
+        color: red;
+      }
+      .colorrightviolet {
+        color: #e818a8;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+        background: linear-gradient(
+          -225deg,
+          #d4ffec 0%,
+          #57f2cc 48%,
+          #4596fb 100%
+        );
+        border: 1px solid green;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 1px 1px;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 60px auto;
+        border-radius: 4px;
+      }
+
+      h3 {
+        padding: 15px 10px;
+        margin: 0 auto;
+        font-size: 24px;
+      }
+      #p-1 {
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      #button-1{
+        display:block;
+        margin: 0 auto;
+        color: #e818a8;
+        background: #f6e972;
+        font-size: 18px;
+        line-height: 52px;
+        padding: 5px 20px;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      #a-1 {
+        text-align: center;
+      } 
+
+      button:hover {
+        background: #e818a8;
+        color: #f6e972;
+      }
+     
+</style>
+
+</head>
+<body>
+      <div class="container">
+      <h1>
+        <div>
+          <span class="colorleftred">Colour </span>
+          <span class="colormiddleblue">Fabric </span>
+          <span class="colorrightviolet">Jewels </span>
+        </div>
+        <hr />
+      </h1>
+
+      <h2>
+        It is sometimes the small things, the ones we take for granted, that are
+        the most wonderful
+
+        
+          <em>
+            <a id="a-1" href="https://victoriafinlay.com/books/" target="_blank">
+              Victoria Findlay (Author)
+            </a>
+          </em>
+      
+      </h2>
+      <img src="images/rainbow.jpg" alt="rainbow painting" width="700"/>
+
+<!-- 
+      <img
+        src="https://images.unsplash.com/photo-1545231097-cbd796f1d95f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=795&q=80"
+        width="700"
+      /> -->
+      <p id="p-1">
+        Years ago, I read the book "Colour" by Victoria Findlay and am still
+        awe-inspired by it. It tells the extraordinary true stories behind the
+        natural pigments found in the world, for example Cleopatra used
+        saffron—a source of the color yellow—for seduction. Extracted from an
+        Afghan mine, the blue “ultramarine” paint used by Michelangelo was so
+        expensive he couldn’t afford to buy it himself. Since ancient times,
+        carmine red—still found in lipsticks and Cherry Coke today—has come from
+        the blood of insects.
+      </p>
+
+      <h3>Click the 🌈 button below ...👇</h3>
+
+      <br />
+      
+        <button id="button-1">🌈🌈🌈🌈🌈🌈</button>
+      
+
+      <br />
+
+      <h4>Coded by <strong>Zoë Brooks</strong></h4>
+<script>
+  function favourite() {
+          let firstname = prompt("What is your firstname?");
+          alert("hello 👋👋👋" + firstname);
+
+          let favecolor = prompt(
+            "What is your favourite colour in the rainbow?"
+          );
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "red") {
+            alert("Red is the last color in the visible spectrum");
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "orange") {
+            alert(
+              "The orange color in fruits and vegetables comes from carotene"
+            );
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "yellow") {
+            alert("Yellow is associated with warmth, sunshine, and positivity");
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "green") {
+            alert(
+              "Green is used for night vision goggles because the eye is most sensitive and able to distinguish the most shades in that color"
+            );
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "blue") {
+            alert("Blue is the rarest colour in nature");
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "indigo") {
+            alert("Egyptians dyed mummy cases with indigo");
+            return false;
+          }
+          favecolor = favecolor.toLowerCase();
+          if (favecolor === "violet") {
+            alert(
+              "In ancient times, Tyrian purple dye, or violet was made from the mucus secretion of sea snails"
+            );
+            return false;
+          } else {
+            alert(
+              "Nice try " +
+                firstname +
+                " but that's not a colour in the rainbow 🌈"
+            );
+          }
+        }
+        let rainbowButton = document.querySelector("button");
+        rainbowButton.addEventListener("click", favourite);
+
+</script>
+</body>
+</html>
